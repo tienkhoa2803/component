@@ -1,16 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import SingleComment from './SingleComment';
-
+import ApprovalCard from './ApprovalCard';
 
 const App = () => {
     return (
-        <div className= "ui container comments">
-           <SingleComment author="Alex"/>
-           <SingleComment author="Sam"/>
-           <SingleComment author="Clever"/>
-           <SingleComment author="Suarez"/>
-           <SingleComment author="Messi"/>
+        <div className="ui container comments">
+            <ApprovalCard>
+                <SingleComment author="Alex" />
+            </ApprovalCard>
+
+            <ApprovalCard>
+                <SingleComment author="Sam" />
+            </ApprovalCard>
+
+            <ApprovalCard>
+                <SingleComment author="Clever" />
+            </ApprovalCard>
+
+            <ApprovalCard>
+                <SingleComment author="Suarez" />
+
+            </ApprovalCard>
+            <ApprovalCard>
+                <SingleComment author="Messi" />
+            </ApprovalCard>
+
         </div>
     )
 };
